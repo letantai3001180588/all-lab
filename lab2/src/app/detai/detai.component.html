@@ -1,0 +1,78 @@
+
+<div class="container">
+    <div class="card-header">
+      <ul class="nav nav-pills card-header-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">/</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sinh viên </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">/</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Alexander</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="card" style="margin-top: 30px">
+      <div class="card-header">
+        <i class='fas fa-table' style='font-size:24px'>&emsp;Đề tài</i>
+      </div>
+      <div class="card-body">
+        
+
+
+
+        <div class="card mb-3 mt-5 mx-md-5" style="border:green 1px solid; color:green">
+          <div class="row no-gutters">		
+            <div class="col-md-7">
+              <div class="card-body" *ngFor='let a of liststudents'>	
+                <div class="row">
+                  <p class="card-text col-md-4 col-6">FirstName:</p>
+                  <p class="font-weight-bold">{{a.FirstMidName}}</p>
+                </div>
+                <div class="row">
+                  <p class="card-text col-md-4 col-6">LastName:</p>
+                  <p class="font-weight-bold">{{a.LastName}}</p>
+                </div>
+                <div class="row">
+                  <p class="card-text col-md-4 col-6">EnrollDate:</p>
+                  <p class="font-weight-bold">{{a.EnrollmentDate}}</p>
+                </div>			
+                <div class="row">
+                  <p class="card-text col-md-4 col-6">Title:</p>
+                  <p class="font-weight-bold">{{a.Title}}</p>
+                </div>
+                <div class="row">
+                  <p class="card-text col-md-4 col-6">Credits:</p>
+                  <p class="font-weight-bold">{{a.Credits}}</p>
+                </div>			
+                <div class="row">
+                  <p class="card-text col-md-4 col-6">Grade:</p>
+                  <p class="font-weight-bold">{{a.Grade}}</p>
+                </div>
+              </div>
+            </div>
+            <!-- <table>
+                <tr *ngFor='let it of liststudents'>
+                    <td></td>
+                    <td>{{it.FirstMidName}}</td>
+                  </tr>
+            </table> -->
+        
+            <div class="card-footer col-md-12">
+              &nbsp;<i class="fas fa-arrow-circle-left fa-lg ml-1"(click)='Back()'>&emsp;Back</i>
+            </div>	
+          </div>
+        </div>
+        <div style="margin-bottom: 20rem"></div>
+      </div>
+    </div>
+</div> 
